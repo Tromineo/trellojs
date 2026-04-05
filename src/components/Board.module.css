@@ -1,0 +1,11 @@
+.board {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.5rem 2rem 2rem;
+  overflow-x: auto;
+  align-items: flex-start;
+  min-height: calc(100vh - 58px);
+}
+.board::-webkit-scrollbar { height: 6px; }
+.board::-webkit-scrollbar-track { background: transparent; }
+.board::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }

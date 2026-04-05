@@ -1,0 +1,50 @@
+.card {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  display: flex; flex-direction: column; gap: .6rem;
+  cursor: grab;
+  transition: transform .15s, box-shadow .15s;
+}
+.card:hover  { transform: translateY(-2px); box-shadow: var(--shadow); }
+.card:active { cursor: grabbing; }
+
+.topRow { display: flex; align-items: center; justify-content: space-between; }
+.priority { font-size: .72rem; font-weight: 600; padding: .2rem .6rem; border-radius: 20px; text-transform: uppercase; letter-spacing: .05em; }
+
+.actions  { display: flex; gap: .3rem; opacity: 0; transition: opacity .15s; }
+.card:hover .actions { opacity: 1; }
+.iconBtn {
+  background: transparent; border: 1px solid var(--border);
+  color: var(--muted); font-size: .85rem; width: 26px; height: 26px;
+  border-radius: 6px; display: grid; place-items: center;
+  transition: background .15s, color .15s;
+}
+.iconBtn:hover        { background: var(--surface); color: var(--text); }
+.iconBtnDanger:hover  { background: #ef444420; color: var(--danger); border-color: var(--danger); }
+
+.title { font-size: .95rem; font-weight: 600; line-height: 1.35; }
+.desc  { font-size: .83rem; color: var(--muted); line-height: 1.5; }
+.tags  { display: flex; flex-wrap: wrap; gap: .35rem; }
+.tag   { font-size: .72rem; color: var(--accent-h); background: #6366f115; padding: .15rem .5rem; border-radius: 4px; }
+
+.editInput {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 6px; padding: .5rem .75rem;
+  color: var(--text); font-size: .93rem; width: 100%;
+  outline: none;
+}
+.editInput:focus { border-color: var(--accent); }
+.editArea {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 6px; padding: .5rem .75rem;
+  color: var(--text); font-size: .85rem; width: 100%; resize: none;
+  outline: none;
+}
+.editArea:focus { border-color: var(--accent); }
+.editActions { display: flex; gap: .5rem; }
+.btnSave   { background: var(--accent); color: #fff; border: none; padding: .4rem 1rem; border-radius: 6px; font-size: .85rem; font-weight: 600; transition: background .15s; }
+.btnSave:hover { background: var(--accent-h); }
+.btnCancel { background: transparent; color: var(--muted); border: 1px solid var(--border); padding: .4rem 1rem; border-radius: 6px; font-size: .85rem; }
+.btnCancel:hover { color: var(--text); }

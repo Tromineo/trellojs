@@ -1,0 +1,26 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:         #0f1117;
+  --surface:    #1a1d27;
+  --surface-2:  #22263a;
+  --border:     rgba(255,255,255,.08);
+  --text:       #e2e8f0;
+  --muted:      #7c8db0;
+  --accent:     #6366f1;
+  --accent-h:   #818cf8;
+  --danger:     #ef4444;
+  --success:    #22c55e;
+  --warn:       #f59e0b;
+  --col-todo:   #6366f1;
+  --col-doing:  #f59e0b;
+  --col-done:   #22c55e;
+  --radius:     10px;
+  --shadow:     0 4px 24px rgba(0,0,0,.35);
+  --font: 'Inter', system-ui, sans-serif;
+}
+
+html { font-size: 16px; }
+body { font-family: var(--font); background: var(--bg); color: var(--text); min-height: 100vh; -webkit-font-smoothing: antialiased; }
+button { cursor: pointer; font-family: inherit; }
+input, textarea { font-family: inherit; }

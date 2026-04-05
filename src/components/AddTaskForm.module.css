@@ -1,0 +1,22 @@
+.form {
+  display: flex; flex-direction: column; gap: .65rem;
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1rem;
+  margin-top: .5rem;
+}
+.input, .textarea, .select {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 6px; padding: .5rem .75rem;
+  color: var(--text); font-size: .88rem; width: 100%; outline: none;
+  transition: border-color .15s;
+}
+.input:focus, .textarea:focus, .select:focus { border-color: var(--accent); }
+.textarea { resize: none; }
+.select   { width: auto; flex-shrink: 0; }
+.row      { display: flex; gap: .5rem; }
+.row .input { flex: 1; }
+.actions  { display: flex; gap: .5rem; }
+.btnAdd    { background: var(--accent); color: #fff; border: none; padding: .45rem 1.1rem; border-radius: 6px; font-size: .85rem; font-weight: 600; transition: background .15s; }
+.btnAdd:hover { background: var(--accent-h); }
+.btnCancel { background: transparent; color: var(--muted); border: 1px solid var(--border); padding: .45rem 1.1rem; border-radius: 6px; font-size: .85rem; }
+.btnCancel:hover { color: var(--text); }
