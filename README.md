@@ -60,12 +60,6 @@ npm run build
 ```
 Os arquivos finais estarão na pasta `dist/`.
 
-## O que não versionar (já no .gitignore)
-
-- `node_modules/`
-- `dist/`
-- `.vscode/`, `.idea/`, arquivos temporários de editor
-- Logs e arquivos locais
 
 ## Personalização
 
