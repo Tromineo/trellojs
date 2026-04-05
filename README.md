@@ -1,5 +1,5 @@
 
-# KanbanFlow
+# Trellojs
 
 Aplicação de gerenciamento de tarefas no estilo Kanban, feita em React 19 + Vite 8, com CSS Modules e drag and drop nativo.
 
